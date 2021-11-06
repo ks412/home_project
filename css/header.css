@@ -3,7 +3,7 @@ body {
     width: 100%;
 }
 
-ul, ul li, h1, h2, h3, p {
+body, ul, ul li, h1, h2, h3, p, svg, img, a {
     margin: 0;
     padding: 0;
 }
@@ -13,12 +13,20 @@ ul, ul li, h1, h2, h3, p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua; /*удалить после теста*/
+    /*background-color: aqua; /*удалить после теста*/
     padding: 20px 15px 20px;
     margin: 0 auto;
 }
 
 /*********************************Header****************************************/
+.header {
+    margin-bottom: 100px;
+}
+
+.logo {
+    padding-top: 4px;
+
+}
 
 .header-wrapper {
     margin: 0;
@@ -51,8 +59,11 @@ ul, ul li, h1, h2, h3, p {
 
 }
 
+.mobail-account, .burger{
+    display: none;
+}
+
 .btn-bacg-non, .btn-bacg-orang {
-    justify-content: center;
     width: 132px;
     height: 44px;
     border: 1px solid #FB8F1D;
@@ -80,7 +91,12 @@ ul, ul li, h1, h2, h3, p {
 
 }
 
+
 @media screen and (max-width:900px) {
+    .header {
+        margin-bottom: 60px;
+        padding: 15px 10px 15px;
+    }
 
     .btn-bacg-non, .btn-bacg-orang {
         width: 106px;
@@ -89,6 +105,48 @@ ul, ul li, h1, h2, h3, p {
     
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:680px) {
+    .header {
+        padding: 10px;
+        margin-bottom: 50px;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
     
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    .header {
+        padding: 5px 10px 5px;
+        background-color: #F0F9FB;
+        margin-bottom: 40px;
+
+    }
+
+    nav, .account {
+        display: none;
+    }
+
+    .burger, .mobail-account {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    
+
+    }
+
+    .mobail-account {
+        margin-right: 15px;
+    }
+
 }
