@@ -21,6 +21,7 @@ body, ul, ul li, h1, h2, h3, p, svg, img, a {
 /*********************************Header****************************************/
 .header {
     margin-bottom: 100px;
+    max-width: 1301px;
 }
 
 .logo {
