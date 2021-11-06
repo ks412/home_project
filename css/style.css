@@ -7,3 +7,88 @@ ul, ul li, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
+
+.header, .header-wrapper, .nav-list, .account,
+.section-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua; /*удалить после теста*/
+    padding: 20px 15px 20px;
+    margin: 0 auto;
+}
+
+/*********************************Header****************************************/
+
+.header-wrapper {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 35px;
+}
+
+.nav-list li > a {
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #979797;
+}
+
+.account {
+    padding: 0;
+    margin-left: 15px;
+
+}
+
+.btn-bacg-non, .btn-bacg-orang {
+    justify-content: center;
+    width: 132px;
+    height: 44px;
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    background: none;
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FB8F1D;
+    cursor: pointer;
+}
+
+.btn-bacg-orang {
+    margin-left: 18px;
+    background-color: #FB8F1D;
+    color: #FFFFFF;
+}
+
+.btn-bacg-non:hover, .btn-bacg-orang:hover {
+
+    transition: 0.15s;
+    transform: scale(1.02);
+
+}
+
+@media screen and (max-width:900px) {
+
+    .btn-bacg-non, .btn-bacg-orang {
+        width: 106px;
+        height: 35px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    
+}
